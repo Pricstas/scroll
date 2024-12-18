@@ -5,7 +5,7 @@ import (
 )
 
 // InvalidTestProof invalid proof used in tests
-const InvalidTestProof = "this is a invalid proof"
+const InvalidTestProof = "this is an invalid proof"
 
 // Verifier represents a rust ffi to a halo2 verifier.
 type Verifier struct {
