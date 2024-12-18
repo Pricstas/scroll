@@ -166,7 +166,7 @@ func (t *TestcontainerApps) GetPoSL1EndPoint() (string, error) {
 	return contrainer.PortEndpoint(context.Background(), "8545/tcp", "http")
 }
 
-// GetPoSL1Client returns a ethclient by dialing running PoS L1 client
+// GetPoSL1Client returns an ethclient by dialing running PoS L1 client
 func (t *TestcontainerApps) GetPoSL1Client() (*ethclient.Client, error) {
 	endpoint, err := t.GetPoSL1EndPoint()
 	if err != nil {
@@ -218,7 +218,7 @@ func (t *TestcontainerApps) GetGormDBClient() (*gorm.DB, error) {
 	return database.InitDB(dbCfg)
 }
 
-// GetL2GethClient returns a ethclient by dialing running L2Geth
+// GetL2GethClient returns an ethclient by dialing running L2Geth
 func (t *TestcontainerApps) GetL2GethClient() (*ethclient.Client, error) {
 	endpoint, err := t.GetL2GethEndPoint()
 	if err != nil {
