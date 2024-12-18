@@ -26,7 +26,7 @@ impl Encodable for LoginMessage {
         s.append(&self.challenge);
         s.append(&self.prover_version);
         s.append(&self.prover_name);
-        // The ProverType in go side is an type alias of uint8
+        // The ProverType in go side is a type alias of uint8
         // A uint8 slice is treated as a string when doing the rlp encoding
         let prover_types = self
             .prover_types
